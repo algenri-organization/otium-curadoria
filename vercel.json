@@ -1,4 +1,10 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/curadoria", "destination": "/curadoria/index.html" },
+    { "source": "/bag-otium", "destination": "/bag-otium/index.html" },
+    { "source": "/nossa-historia", "destination": "/nossa-historia/index.html" },
+    { "source": "/tempo-otium", "destination": "/tempo-otium/index.html" }
+  ]
 }
