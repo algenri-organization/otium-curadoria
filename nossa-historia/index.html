@@ -1,183 +1,114 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nossa História | OTIUM</title>
-<meta name="description" content="Conheça a história, o significado e as pessoas por trás da OTIUM."/>
+<meta name="description" content="Conheça a história, a essência e as pessoas por trás da OTIUM.">
 <style>
-:root{--navy:#0b2239;--cream:#f7f2ec;--copper:#c9905b;--ink:#153047;--muted:#756354;--line:#e3d5c7}
+:root{--navy:#0b2239;--cream:#f7f2ec;--copper:#c9905b;--ink:#153047;--muted:#7b6759;--line:#dfd0c2}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
 a{color:inherit}
-.topbar{height:60px;background:var(--navy);display:flex;align-items:center;justify-content:center;position:sticky;top:0;z-index:50}
-.topbar-inner{width:min(1220px,calc(100% - 40px));display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;height:42px}.brand img{height:34px;width:auto;max-width:220px}
+.top{height:58px;background:var(--navy);display:flex;align-items:center;position:sticky;top:0;z-index:20}
+.topin{width:min(1200px,calc(100% - 40px));margin:auto;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center}.logo img{height:34px;width:auto;max-width:220px}
 .back{color:#fff;text-decoration:none;text-transform:uppercase;font-size:12px;letter-spacing:.14em}
-main{overflow:hidden}
-.wrap{width:min(1180px,calc(100% - 36px));margin:0 auto}
-.hero{display:grid;grid-template-columns:.92fr 1.08fr;min-height:540px;align-items:stretch}
-.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:58px 42px 58px 0}
+.hero{display:grid;grid-template-columns:.9fr 1.1fr;min-height:560px}
+.hero-copy{padding:66px max(6vw,40px);display:flex;flex-direction:column;justify-content:center}
 .kicker{color:var(--copper);font-size:11px;letter-spacing:.34em;text-transform:uppercase;margin-bottom:12px}
-h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400;color:var(--navy)}
-h1{font-size:clamp(52px,6vw,78px);line-height:1.02;margin:0 0 14px}
-.hero-lead{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:clamp(22px,2.4vw,30px);line-height:1.4;color:var(--muted);margin:0 0 24px}
-.hero-copy p{font-size:17px;line-height:1.78;margin:0;max-width:580px}
-.hero-photo{position:relative;background:linear-gradient(145deg,#d7c1ae,#8d6b54);overflow:hidden}
-.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
-.hero-photo.placeholder:before{content:"Foto aprovada das três mulheres da OTIUM";position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:32px;color:#fff;background:linear-gradient(135deg,rgba(11,34,57,.45),rgba(201,144,91,.22));font-family:Georgia,'Times New Roman',serif;font-size:28px}
-.meaning{padding:64px 0;background:linear-gradient(90deg,#f7f2ec,#fbf7f1)}
-.meaning-grid{display:grid;grid-template-columns:.9fr 1.5fr;gap:54px;align-items:center}
-.meaning h2{font-size:clamp(42px,5vw,62px);line-height:1;margin:0 0 8px;letter-spacing:.05em}
-.meaning .latin{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
-.meaning-copy{font-family:Georgia,'Times New Roman',serif;font-size:21px;line-height:1.55}
-.meaning-copy em{color:var(--copper)}
-.values{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-left:1px solid var(--line)}
-.value{padding:20px 22px;text-align:center;border-right:1px solid var(--line)}
-.value .icon{font-size:34px;color:var(--copper);margin-bottom:10px}
-.value strong{display:block;font-family:Georgia,'Times New Roman',serif;font-size:18px;font-weight:400;line-height:1.35}
-.team-intro{text-align:center;padding:62px 0 28px}
-.team-intro h2{font-size:clamp(38px,4.5vw,58px);margin:0 0 12px}
-.team-intro p{max-width:850px;margin:0 auto;font-size:17px;line-height:1.72}
-.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-bottom:64px}
-.person{border:1px solid var(--line);background:rgba(255,255,255,.26);overflow:hidden}
-.person-photo{aspect-ratio:4/4.8;background:linear-gradient(145deg,#dbc8b8,#b58f74);position:relative;overflow:hidden}
-.person-photo img{width:100%;height:100%;object-fit:cover;display:block}
-.person-photo.placeholder:before{content:attr(data-label);position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:22px;color:#fff;background:linear-gradient(135deg,rgba(11,34,57,.42),rgba(201,144,91,.22));font-family:Georgia,'Times New Roman',serif;font-size:24px}
-.person-body{padding:24px 24px 28px}
-.person h3{font-size:30px;margin:0 0 6px}
-.role{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--copper);line-height:1.45;margin-bottom:15px}
-.person p{font-size:15px;line-height:1.7;margin:0}
-.closing{background:linear-gradient(120deg,#efe1d4,#f7f2ec 48%,#ead8c9);padding:62px 20px;text-align:center;position:relative}
-.closing h2{font-size:clamp(36px,4.5vw,56px);line-height:1.15;margin:0 auto 16px;max-width:850px}
-.closing h2 em{color:var(--copper);font-weight:400}
-.closing p{max-width:730px;margin:0 auto 26px;font-size:17px;line-height:1.72}
-.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:14px 26px;border:1px solid var(--copper);text-decoration:none;text-transform:uppercase;letter-spacing:.13em;font-size:11px}
+.hero h1,.meaning h2,.people h2,.final h2,.person h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;color:var(--navy)}
+.hero h1{font-size:clamp(54px,7vw,86px);line-height:.98;margin:0 0 16px}
+.lead{font:italic 24px/1.45 Georgia,"Times New Roman",serif;color:var(--muted);margin:0 0 22px}
+.hero-copy p{font-size:17px;line-height:1.78;margin:0;max-width:620px}
+.hero-img{background:url("/assets/nossa-historia-equipe.webp") center 42%/cover no-repeat;min-height:560px}
+.meaning{padding:62px 6vw;border-top:1px solid rgba(201,144,91,.18);display:grid;grid-template-columns:.9fr 1.4fr;gap:50px;align-items:center}
+.meaning h2{font-size:54px;margin:0 0 4px}
+.latin{font-size:11px;letter-spacing:.23em;text-transform:uppercase;color:var(--copper);margin-bottom:22px}
+.meaning-copy{font:21px/1.5 Georgia,"Times New Roman",serif;max-width:430px}.meaning-copy em{color:var(--copper)}
+.values{display:grid;grid-template-columns:repeat(4,1fr)}
+.value{text-align:center;padding:18px 12px;border-left:1px solid var(--line)}.value:first-child{border-left:0}
+.icon{height:48px;margin:0 auto 10px;color:var(--copper)}.icon svg{width:48px;height:48px;stroke:currentColor;fill:none;stroke-width:1.5}
+.value strong{font:20px/1.2 Georgia,"Times New Roman",serif;font-weight:400;display:block}
+.people{text-align:center;padding:60px 5vw 72px;border-top:1px solid rgba(201,144,91,.15)}
+.people h2{font-size:50px;margin:0 0 10px}.sub{letter-spacing:.25em;text-transform:uppercase;font-size:10px;color:var(--copper);margin-bottom:12px}
+.people-intro{max-width:900px;margin:0 auto 34px;font-size:16px;line-height:1.72}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1150px;margin:auto;text-align:left}
+.person{border:1px solid var(--line);background:rgba(255,255,255,.25)}
+.portrait{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.person-body{padding:24px}.person h3{font-size:32px;margin:0 0 4px}
+.role{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--copper);line-height:1.45;margin-bottom:15px}
+.person p{font-size:15px;line-height:1.65;margin:0}
+.final{padding:66px 22px 72px;text-align:center;border-top:1px solid rgba(201,144,91,.18)}
+.final .kicker{text-align:center}.final h2{font-size:44px;margin:0 0 16px}.final p{max-width:760px;margin:0 auto 28px;font-size:16px;line-height:1.72}
+.actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border:1px solid var(--copper);text-decoration:none;text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:var(--navy)}
 .btn.primary{background:var(--navy);color:#fff}
-.btn.secondary{background:transparent;color:var(--navy)}
-.footer{text-align:center;color:#8d7a6a;font-size:11px;padding:16px 0 26px}
-@media(max-width:860px){
- .topbar{height:56px}.topbar-inner{width:calc(100% - 24px)}.brand{height:38px}.brand img{height:28px;max-width:150px}.back{font-size:10px;letter-spacing:.1em}
- .wrap{width:calc(100% - 24px)}
- .hero{grid-template-columns:1fr;min-height:auto}
- .hero-copy{padding:30px 4px 24px;text-align:center}
- h1{font-size:44px}
- .hero-lead{font-size:20px;margin-bottom:16px}
- .hero-copy p{font-size:16px;line-height:1.68;margin:0 auto}
- .hero-photo{min-height:390px}
- .meaning{padding:42px 0}
- .meaning-grid{grid-template-columns:1fr;gap:28px;text-align:center}
- .meaning h2{font-size:46px}
- .meaning-copy{font-size:19px}
- .values{grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
- .value{border-bottom:1px solid var(--line)}
- .team-intro{padding:44px 0 22px}
- .team-intro h2{font-size:36px}
- .team-intro p{font-size:16px;line-height:1.65}
- .team-grid{grid-template-columns:1fr;gap:14px;padding-bottom:44px}
- .person{max-width:520px;width:100%;margin:0 auto}
- .person-photo{aspect-ratio:4/4.6}
- .person h3{font-size:28px}
- .person-body{padding:22px}
- .closing{padding:44px 16px}
- .closing h2{font-size:34px}
- .closing p{font-size:16px;line-height:1.65}
- .actions{flex-direction:column;align-items:center}
- .btn{width:100%;max-width:360px;text-align:center}
+.foot{text-align:center;padding:18px;color:#8d7a6a;font-size:11px}
+@media(max-width:900px){
+ .hero{grid-template-columns:1fr;min-height:0}.hero-copy{padding:44px 24px 30px;text-align:center}.hero-img{min-height:500px}
+ .meaning{grid-template-columns:1fr;text-align:center;padding:48px 24px}.meaning-copy{margin:auto}
+ .values{grid-template-columns:repeat(2,1fr)}.value:nth-child(3){border-left:0}
+ .grid{grid-template-columns:1fr;max-width:520px}.people h2{font-size:42px}
 }
-@media(max-width:420px){
- h1{font-size:38px}
- .hero-photo{min-height:330px}
- .meaning h2{font-size:40px}
- .values{grid-template-columns:1fr}
- .value{border-left:0}
+@media(max-width:560px){
+ .top{height:56px}.topin{width:calc(100% - 24px)}.logo img{height:28px;max-width:150px}.back{font-size:10px;letter-spacing:.1em}
+ .hero-copy{padding:32px 18px 24px}.hero h1{font-size:46px}.lead{font-size:20px}.hero-copy p{font-size:15px;line-height:1.65}
+ .hero-img{min-height:345px;background-position:center 38%}
+ .meaning{padding:40px 18px;gap:28px}.meaning h2{font-size:42px}.meaning-copy{font-size:18px}
+ .values{grid-template-columns:1fr 1fr}.value{padding:16px 8px}.value strong{font-size:18px}
+ .people{padding:42px 16px 50px}.people h2{font-size:36px;line-height:1.08}.people-intro{font-size:15px;line-height:1.65}
+ .grid{gap:14px}.person-body{padding:20px}.person h3{font-size:29px}.person p{font-size:14px}
+ .final{padding:46px 18px 54px}.final h2{font-size:34px;line-height:1.15}.final p{font-size:15px}
+ .actions{display:grid}.btn{width:100%;max-width:360px;margin:auto;text-align:center}
 }
 </style>
 </head>
 <body>
-<header class="topbar">
- <div class="topbar-inner">
-  <div class="brand"><img src="/assets/logo-otium.png" alt="OTIUM"></div>
-  <a class="back" href="https://otium9.lojavirtualnuvem.com.br/">Voltar à loja</a>
+<header class="top"><div class="topin"><a class="logo" href="/curadoria"><img src="/assets/logo-otium.png" alt="OTIUM"></a><a class="back" href="https://otium9.lojavirtualnuvem.com.br/">Voltar à loja</a></div></header>
+
+<section class="hero">
+ <div class="hero-copy">
+  <div class="kicker">Quem somos</div>
+  <h1>Nossa História</h1>
+  <div class="lead">Uma marca que nasce da pausa, do cuidado e da presença.</div>
+  <p>Na OTIUM, a pausa inspira escolhas mais conscientes, leves e humanas. Acreditamos que o descanso faz parte de uma vida mais leve, presente e equilibrada, e que o bem-estar está nos detalhes do dia a dia.</p>
  </div>
-</header>
-<main>
- <section class="wrap hero">
-  <div class="hero-copy">
-   <div class="kicker">Quem somos</div>
-   <h1>Nossa História</h1>
-   <div class="hero-lead">Uma marca que nasce da pausa, do cuidado e da presença.</div>
-   <p>A OTIUM nasce de uma escolha consciente: desacelerar para perceber melhor o tempo, valorizar o que realmente importa e transformar conforto em uma experiência de cuidado. Mais do que sleepwear, buscamos criar momentos mais leves, presentes e significativos.</p>
-  </div>
-  <div class="hero-photo placeholder"><img src="/assets/nossa-historia-grupo.png" alt="Equipe OTIUM"></div>
- </section>
+ <div class="hero-img" aria-label="Equipe OTIUM"></div>
+</section>
 
- <section class="meaning">
-  <div class="wrap meaning-grid">
-   <div>
-    <div class="kicker">O significado de</div>
-    <h2>OTIUM</h2>
-    <div class="latin">(do latim) substantivo</div>
-    <div class="meaning-copy">Tempo dedicado ao que devolve <em>presença</em>.<br>É a escolha consciente de desacelerar para sentir melhor o tempo.</div>
-   </div>
-   <div class="values">
-    <div class="value"><div class="icon">❧</div><strong>Cultiva<br>o essencial</strong></div>
-    <div class="value"><div class="icon">◌</div><strong>Promove<br>equilíbrio</strong></div>
-    <div class="value"><div class="icon">▱</div><strong>Fortalece<br>o caráter</strong></div>
-    <div class="value"><div class="icon">⌁</div><strong>Conecta com<br>o que importa</strong></div>
-   </div>
-  </div>
- </section>
+<section class="meaning">
+ <div>
+  <div class="kicker">O significado de</div>
+  <h2>OTIUM</h2>
+  <div class="latin">(do latim) substantivo</div>
+  <div class="meaning-copy">Tempo dedicado ao que devolve <em>presença</em>.<br>É a escolha consciente de desacelerar para sentir melhor o tempo.</div>
+ </div>
+ <div class="values">
+  <div class="value"><div class="icon"><svg viewBox="0 0 48 48"><path d="M12 34c9-1 17-8 22-20-12 2-20 8-22 20Z"/><path d="M12 34c7-7 13-12 22-20"/></svg></div><strong>Cultiva<br>o essencial</strong></div>
+  <div class="value"><div class="icon"><svg viewBox="0 0 48 48"><path d="M8 28c6-8 26-8 32 0"/><path d="M12 32c6 5 18 5 24 0"/><circle cx="24" cy="19" r="4"/></svg></div><strong>Promove<br>equilíbrio</strong></div>
+  <div class="value"><div class="icon"><svg viewBox="0 0 48 48"><path d="M8 14c7-3 12-2 16 2 4-4 9-5 16-2v22c-7-3-12-2-16 2-4-4-9-5-16-2Z"/><path d="M24 16v22"/></svg></div><strong>Fortalece<br>o caráter</strong></div>
+  <div class="value"><div class="icon"><svg viewBox="0 0 48 48"><path d="M17 12c8 1 14 7 14 14 0 5-3 8-7 10"/><path d="M24 36c0-4-2-7-6-9"/></svg></div><strong>Conecta com<br>o que importa</strong></div>
+ </div>
+</section>
 
- <section class="wrap">
-  <div class="team-intro">
-   <div class="kicker">Conheça nossa equipe</div>
-   <h2>Quem está por trás da OTIUM?</h2>
-   <p>Por trás da OTIUM estão mulheres que acreditam que o cuidado faz toda a diferença. São elas que selecionam cada peça da curadoria, acompanham cada entrega e cada atendimento para que a experiência seja leve, acolhedora e personalizada do início ao fim.</p>
-  </div>
+<section class="people">
+ <div class="sub">Conheça nossa equipe</div>
+ <h2>Três mulheres, um mesmo propósito</h2>
+ <p class="people-intro">Por trás da OTIUM estão mulheres que acreditam que o cuidado faz toda a diferença. Selecionamos cada peça da curadoria, organizamos cada entrega e acompanhamos de perto cada atendimento, para que sua experiência seja leve, acolhedora e personalizada do início ao fim.</p>
+ <div class="grid">
+  <article class="person"><img class="portrait" src="/assets/danielle-meloto.webp" alt="Danielle Meloto"><div class="person-body"><h3>Danielle Meloto</h3><div class="role">Cofundadora e curadora da OTIUM</div><p>Com uma trajetória construída na confiança e no cuidado, ela encontrou nos momentos de pausa a inspiração para criar a OTIUM. Acredita que o descanso faz parte de uma vida mais leve, presente e equilibrada.</p></div></article>
+  <article class="person"><img class="portrait" src="/assets/jacqueline-meloto.webp" alt="Jacqueline Meloto"><div class="person-body"><h3>Jacqueline Meloto</h3><div class="role">Cofundadora e curadora da OTIUM</div><p>Com uma trajetória construída no cuidado com as pessoas, ela traz para a OTIUM sensibilidade, acolhimento e atenção aos detalhes. Acredita que o bem-estar nasce dos pequenos gestos e contribui para que cada experiência com a marca seja leve, próxima e significativa.</p></div></article>
+  <article class="person"><img class="portrait" src="/assets/stephanie-bello.webp" alt="Stephanie Bello"><div class="person-body"><h3>Stephanie Bello</h3><div class="role">Atendimento e relacionamento com clientes</div><p>Desde a idealização da marca, compartilha dos valores que inspiraram sua criação e acredita que o cuidado está presente em cada detalhe. Com atenção e acolhimento, dedica-se a proporcionar uma experiência próxima e personalizada, fazendo com que cada cliente se sinta bem recebida e cuidada.</p></div></article>
+ </div>
+</section>
 
-  <div class="team-grid">
-   <article class="person">
-    <div class="person-photo placeholder" data-label="Danielle Meloto"><img src="/assets/danielle-meloto.png" alt="Danielle Meloto"></div>
-    <div class="person-body">
-     <h3>Danielle Meloto</h3>
-     <div class="role">Cofundadora e curadora da OTIUM</div>
-     <p>Com uma trajetória construída na confiança e no cuidado, encontrou nos momentos de pausa a inspiração para criar a OTIUM. Acredita que o descanso faz parte de uma vida mais leve, presente e equilibrada.</p>
-    </div>
-   </article>
-
-   <article class="person">
-    <div class="person-photo placeholder" data-label="Jacqueline Meloto"><img src="/assets/jacqueline-meloto.png" alt="Jacqueline Meloto"></div>
-    <div class="person-body">
-     <h3>Jacqueline Meloto</h3>
-     <div class="role">Cofundadora e curadora da OTIUM</div>
-     <p>Com uma trajetória construída no cuidado com as pessoas, traz para a OTIUM sensibilidade, acolhimento e atenção aos detalhes. Acredita que o bem-estar nasce dos pequenos gestos e contribui para que cada experiência com a marca seja leve, próxima e significativa.</p>
-    </div>
-   </article>
-
-   <article class="person">
-    <div class="person-photo placeholder" data-label="Stephanie Bello"><img src="/assets/stephanie-bello.png" alt="Stephanie Bello"></div>
-    <div class="person-body">
-     <h3>Stephanie Bello</h3>
-     <div class="role">Atendimento e relacionamento com clientes</div>
-     <p>Desde a idealização da marca, compartilha dos valores que inspiraram sua criação e acredita que o cuidado está presente em cada detalhe. Com atenção e acolhimento, dedica-se a proporcionar uma experiência próxima e personalizada.</p>
-    </div>
-   </article>
-  </div>
- </section>
-
- <section class="closing">
-  <div class="kicker">Mais do que sleepwear</div>
-  <h2>A OTIUM é <em>um convite à pausa.</em></h2>
-  <p>Queremos proporcionar conforto, atenção aos detalhes e a sensação de ser cuidada em cada etapa. Mais do que peças, oferecemos uma experiência que celebra o essencial: uma vida mais leve, presente e cheia de significado.</p>
-  <div class="actions">
-   <a class="btn primary" href="/curadoria">Conheça a curadoria</a>
-   <a class="btn secondary" href="https://wa.me/5542999299000?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20melhor%20a%20OTIUM." target="_blank" rel="noopener noreferrer">Fale com a OTIUM</a>
-  </div>
- </section>
- <div class="footer">OTIUM • Nossa História</div>
-</main>
-</body>
-</html>
+<section class="final">
+ <div class="kicker">Mais do que sleepwear</div>
+ <h2>A OTIUM é um convite à pausa.</h2>
+ <p>Mais do que oferecer sleepwear, queremos proporcionar conforto, atenção aos detalhes e a sensação de ser cuidada em cada etapa.</p>
+ <div class="actions"><a class="btn primary" href="/curadoria">Conheça a curadoria</a><a class="btn" target="_blank" rel="noopener noreferrer" href="https://wa.me/5542999299000?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20melhor%20a%20OTIUM.">Fale com a OTIUM</a></div>
+</section>
+<div class="foot">OTIUM • Nossa História</div>
+</body></html>
