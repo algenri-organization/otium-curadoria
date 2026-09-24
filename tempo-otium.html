@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tempo OTIUM</title>
+<meta name="description" content="Tempo OTIUM: um espaço para quem quer estar mais perto da marca.">
+<style>
+:root{--navy:#0b2239;--cream:#f7f2ec;--copper:#c9905b;--ink:#153047;--muted:#806753;--line:#dfd0c2}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit}
+.top{height:58px;background:var(--navy);display:flex;align-items:center;position:sticky;top:0;z-index:20}
+.topin{width:min(1200px,calc(100% - 40px));margin:auto;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center}.logo img{height:34px;width:auto;max-width:220px}
+.back{color:#fff;text-decoration:none;text-transform:uppercase;font-size:12px;letter-spacing:.14em}
+main{width:min(1180px,calc(100% - 40px));margin:auto;padding:62px 0 72px}
+.hero{text-align:center;max-width:920px;margin:0 auto 54px}
+.kicker{color:var(--copper);font-size:11px;letter-spacing:.34em;text-transform:uppercase;margin-bottom:12px}
+h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;color:var(--navy)}
+h1{font-size:clamp(54px,7vw,86px);line-height:.98;margin:0 0 14px}
+.lead{font:italic 23px/1.5 Georgia,"Times New Roman",serif;color:var(--muted);margin:0 auto 24px;max-width:760px}
+.hero p{font-size:17px;line-height:1.78;max-width:760px;margin:0 auto}
+.invite{margin:48px auto 0;background:var(--navy);color:#fff;max-width:980px;padding:58px 54px;text-align:center}
+.invite .kicker{margin-bottom:14px}.invite h2{color:#fff;font-size:46px;margin:0 0 16px}
+.invite p{max-width:730px;margin:0 auto 28px;font-size:16px;line-height:1.72;color:#eee5dc}
+.cta{display:inline-block;padding:15px 28px;border:1px solid var(--copper);color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.16em;font-size:11px}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:52px auto 0;max-width:1050px}
+.card{border:1px solid var(--line);background:rgba(255,255,255,.3);padding:30px 24px;text-align:center}
+.icon{width:46px;height:46px;margin:0 auto 14px;color:var(--copper)}
+.icon svg{width:46px;height:46px;stroke:currentColor;fill:none;stroke-width:1.5}
+.card h3{font:24px/1.2 Georgia,"Times New Roman",serif;font-weight:400;color:var(--navy);margin:0 0 10px}
+.card p{font-size:14px;line-height:1.65;margin:0;color:#46596a}
+.note{max-width:800px;margin:50px auto 0;text-align:center;font-size:14px;line-height:1.7;color:#69584a}
+.foot{text-align:center;padding:18px;color:#8d7a6a;font-size:11px}
+@media(max-width:820px){
+ main{width:calc(100% - 28px);padding:42px 0 54px}
+ .hero{margin-bottom:38px}.benefits{grid-template-columns:1fr;max-width:560px}
+ .invite{padding:44px 28px}.invite h2{font-size:38px}
+}
+@media(max-width:560px){
+ .top{height:56px}.topin{width:calc(100% - 24px)}.logo img{height:28px;max-width:150px}.back{font-size:10px;letter-spacing:.1em}
+ main{width:calc(100% - 24px);padding:32px 0 44px}
+ h1{font-size:46px}.lead{font-size:20px}.hero p{font-size:15px;line-height:1.65}
+ .invite{margin-top:36px;padding:36px 18px}.invite h2{font-size:34px;line-height:1.12}.invite p{font-size:15px}
+ .cta{display:block;width:100%;max-width:360px;margin:auto;padding:14px 18px}
+ .benefits{margin-top:36px;gap:12px}.card{padding:24px 18px}.card h3{font-size:22px}.card p{font-size:14px}
+ .note{margin-top:36px;font-size:13px}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="topin"><a class="logo" href="/curadoria"><img src="/assets/logo-otium.png" alt="OTIUM"></a><a class="back" href="https://otium9.lojavirtualnuvem.com.br/">Voltar à loja</a></div></header>
+<main>
+<section class="hero">
+  <div class="kicker">Tempo OTIUM</div>
+  <h1>Um espaço para quem quer estar mais perto.</h1>
+  <div class="lead">Novidades, lançamentos e condições especiais para viver a OTIUM além da loja.</div>
+  <p>O Tempo OTIUM é o nosso espaço de relacionamento mais próximo com quem se identifica com a marca. Um convite para acompanhar novidades, lançamentos, seleções especiais e oportunidades compartilhadas em primeira mão.</p>
+</section>
+
+<section class="invite">
+  <div class="kicker">Entre para o grupo</div>
+  <h2>Seu tempo, mais perto da OTIUM.</h2>
+  <p>Participe do grupo VIP no WhatsApp e acompanhe de forma simples e direta o que está acontecendo por aqui.</p>
+  <a class="cta" href="https://chat.whatsapp.com/HkucjpuyXVz6pBlEE9izkW" target="_blank" rel="noopener noreferrer">Entrar no Tempo OTIUM</a>
+</section>
+
+<section class="benefits">
+  <article class="card"><div class="icon"><svg viewBox="0 0 48 48"><path d="M24 7v34M7 24h34"/><circle cx="24" cy="24" r="13"/></svg></div><h3>Novidades</h3><p>Receba lançamentos e novas curadorias assim que chegarem à OTIUM.</p></article>
+  <article class="card"><div class="icon"><svg viewBox="0 0 48 48"><path d="M10 17h28v21H10z"/><path d="M16 17a8 8 0 0 1 16 0"/></svg></div><h3>Condições especiais</h3><p>Acompanhe oportunidades e condições pensadas para quem está mais perto da marca.</p></article>
+  <article class="card"><div class="icon"><svg viewBox="0 0 48 48"><path d="M9 29c7-10 23-10 30 0"/><path d="M15 34c5 4 13 4 18 0"/><circle cx="24" cy="19" r="4"/></svg></div><h3>Proximidade</h3><p>Um canal leve e direto para acompanhar a OTIUM de forma mais próxima.</p></article>
+</section>
+
+<p class="note">O grupo é um espaço de relacionamento da OTIUM. As comunicações são feitas de forma pontual, com foco em novidades, lançamentos e benefícios relevantes.</p>
+</main>
+<div class="foot">OTIUM • Tempo OTIUM</div>
+</body>
+</html>
