@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bag OTIUM | Experiência OTIUM</title>
+  <meta name="description" content="Conheça a Bag OTIUM: conte o que procura, nossa curadoria prepara uma seleção e leva a experiência OTIUM até você em Ponta Grossa/PR." />
+  <style>
+    :root{--navy:#0b2239;--cream:#f7f2ec;--copper:#c9905b;--ink:#153047;--muted:#806b5a;--line:#e1d3c6}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    a{color:inherit}
+    .topbar{height:58px;background:var(--navy);display:flex;align-items:center;justify-content:center;position:sticky;top:0;z-index:20}
+    .topbar-inner{width:min(1200px,calc(100% - 40px));display:flex;align-items:center;justify-content:space-between;color:#fff}
+    .brand{font-family:Georgia,'Times New Roman',serif;letter-spacing:.18em;font-size:22px}
+    .back{font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;opacity:.92}
+    main{width:min(1180px,calc(100% - 36px));margin:0 auto;padding:34px 0 58px}
+    .eyebrow{text-align:center;color:var(--copper);font-size:11px;letter-spacing:.36em;text-transform:uppercase;margin-bottom:10px}
+    h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400;color:var(--navy)}
+    h1{font-size:clamp(44px,6vw,72px);line-height:1.02;text-align:center;margin:0 0 10px}
+    .lead{max-width:760px;margin:0 auto 26px;text-align:center;font-family:Georgia,'Times New Roman',serif;font-style:italic;color:var(--muted);font-size:clamp(19px,2.2vw,25px);line-height:1.5}
+    .hero{display:grid;grid-template-columns:.92fr 1.08fr;gap:34px;align-items:center;margin-top:28px}
+    .hero-copy{padding:18px 0}
+    .hero-copy h2{font-size:clamp(34px,4.5vw,54px);line-height:1.08;margin:0 0 18px}
+    .hero-copy p{font-size:17px;line-height:1.8;margin:0 0 14px}
+    .visual{min-height:480px;border-radius:2px;overflow:hidden;position:relative;background:
+      radial-gradient(circle at 24% 30%,rgba(255,255,255,.9),rgba(255,255,255,0) 28%),
+      linear-gradient(135deg,#ead8c9 0%,#f6eee6 52%,#d9c2b2 100%);}
+    .visual:before{content:"";position:absolute;left:9%;top:18%;width:48%;height:58%;background:#0b2239;border-radius:4px;box-shadow:0 22px 40px rgba(11,34,57,.16)}
+    .visual:after{content:"OTIUM";position:absolute;left:15%;top:42%;width:36%;text-align:center;color:#c9905b;font-family:Georgia,'Times New Roman',serif;letter-spacing:.24em;font-size:28px}
+    .fabric{position:absolute;border-radius:4px;box-shadow:0 14px 28px rgba(40,30,20,.10)}
+    .fabric.one{right:7%;bottom:9%;width:48%;height:29%;background:linear-gradient(145deg,#f1d4c7,#d4a790)}
+    .fabric.two{right:18%;bottom:29%;width:36%;height:22%;background:linear-gradient(145deg,#fffaf5,#e8ded5)}
+    .availability{display:inline-block;margin:10px 0 0;padding:8px 12px;border:1px solid var(--line);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+    .cta{display:inline-block;margin-top:22px;padding:15px 28px;border:1px solid var(--copper);background:var(--navy);color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.16em;font-size:12px}
+    .cta.pending{cursor:default}
+    .divider{width:72px;height:1px;background:var(--copper);margin:46px auto}
+    .steps{text-align:center}
+    .steps h2,.experience h2{font-size:clamp(30px,4vw,44px);margin:0 0 26px}
+    .step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .step{border:1px solid var(--line);padding:30px 24px;min-height:195px;background:rgba(255,255,255,.25)}
+    .step span{display:block;color:var(--copper);font-size:11px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:14px}
+    .step h3{font-size:24px;margin:0 0 10px}
+    .step p{margin:0;line-height:1.7;font-size:15px}
+    .experience{margin-top:48px;background:var(--navy);color:#f7f2ec;padding:46px 34px;text-align:center}
+    .experience h2{color:#f7f2ec}
+    .experience p{max-width:720px;margin:0 auto 20px;line-height:1.75;color:#eee5dc}
+    .experience .cta{background:transparent;color:#fff}
+    .note{max-width:720px;margin:16px auto 0;font-size:12px;line-height:1.6;color:#bcae9f}
+    footer{text-align:center;color:#8d7a6a;font-size:12px;padding:18px 0 0}
+    @media(max-width:860px){
+      .hero{grid-template-columns:1fr;gap:22px}
+      .hero-copy{text-align:center}
+      .visual{min-height:390px}
+      .step-grid{grid-template-columns:1fr}
+      .step{min-height:auto}
+    }
+    @media(max-width:640px){
+      .topbar{height:54px}.topbar-inner{width:calc(100% - 28px)}.brand{font-size:18px}
+      main{width:calc(100% - 28px);padding:26px 0 46px}
+      .visual{min-height:320px}
+      .experience{padding:36px 20px}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">OTIUM</div>
+      <a class="back" href="https://otium9.lojavirtualnuvem.com.br/">Voltar à loja</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="eyebrow">Experiência OTIUM</div>
+    <h1>Bag OTIUM</h1>
+    <div class="lead">Levamos a experiência OTIUM até você.</div>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <h2>Uma seleção pensada para o seu momento.</h2>
+        <p>Conte para nossas curadoras o que procura. A OTIUM prepara uma seleção de peças e leva essa experiência até você.</p>
+        <div class="availability">Disponível exclusivamente em Ponta Grossa/PR</div><br />
+        <a class="cta pending" href="#" aria-disabled="true" onclick="return false;">Quero minha Bag</a>
+        <div class="note">O link definitivo do WhatsApp será conectado aqui antes da publicação final.</div>
+      </div>
+      <div class="visual" aria-label="Área reservada para a imagem editorial da Bag OTIUM">
+        <div class="fabric one"></div>
+        <div class="fabric two"></div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="steps">
+      <div class="eyebrow">Como funciona</div>
+      <h2>Simples, próximo e com curadoria.</h2>
+      <div class="step-grid">
+        <article class="step">
+          <span>01</span>
+          <h3>Conte o que procura</h3>
+          <p>O atendimento começa pelo WhatsApp, de forma direta e pessoal.</p>
+        </article>
+        <article class="step">
+          <span>02</span>
+          <h3>Nós preparamos</h3>
+          <p>A curadoria OTIUM reúne uma seleção de peças de acordo com o que você procura.</p>
+        </article>
+        <article class="step">
+          <span>03</span>
+          <h3>Levamos até você</h3>
+          <p>A experiência da Bag OTIUM chega até você em Ponta Grossa/PR.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience">
+      <div class="eyebrow">Seu tempo, do seu jeito</div>
+      <h2>Conforto também está na forma de escolher.</h2>
+      <p>A Bag OTIUM aproxima a nossa curadoria de você, com uma experiência leve, pessoal e sem etapas desnecessárias.</p>
+      <a class="cta pending" href="#" aria-disabled="true" onclick="return false;">Falar pelo WhatsApp</a>
+      <div class="note">CTA preparado; aguardando somente o link oficial de atendimento da Bag.</div>
+    </section>
+
+    <footer>OTIUM • Bag OTIUM</footer>
+  </main>
+</body>
+</html>
