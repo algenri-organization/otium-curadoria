@@ -3,6 +3,35 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+    (function () {
+      var pages = {
+        "nossa-historia.otiumstore.com.br": "/nossa-historia",
+        "bag.otiumstore.com.br": "/bag-otium",
+        "tempo.otiumstore.com.br": "/tempo-otium"
+      };
+      var target = pages[window.location.hostname];
+      if (!target || window.location.pathname !== "/") return;
+
+      document.documentElement.style.visibility = "hidden";
+
+      fetch(target, { cache: "no-store" })
+        .then(function (response) {
+          if (!response.ok) throw new Error("Falha ao carregar a página.");
+          return response.text();
+        })
+        .then(function (html) {
+          document.open();
+          document.write(html);
+          document.close();
+          history.replaceState(null, "", "/");
+          document.documentElement.style.visibility = "";
+        })
+        .catch(function () {
+          window.location.replace(target);
+        });
+    })();
+  </script>
   <title>Curadoria OTIUM</title>
   <meta name="description" content="Conheça a curadoria OTIUM, com peças selecionadas de Daniela Tombini, Jogê e Lua Luá para momentos de conforto, pausa e bem-estar." />
   <style>
