@@ -2,6 +2,46 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "curadoria.otiumstore.com.br"
+        }
+      ],
+      "destination": "/curadoria.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nossa-historia.otiumstore.com.br"
+        }
+      ],
+      "destination": "/nossa-historia.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "bag.otiumstore.com.br"
+        }
+      ],
+      "destination": "/bag-otium.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "tempo.otiumstore.com.br"
+        }
+      ],
+      "destination": "/tempo-otium.html"
+    },
     { "source": "/curadoria", "destination": "/curadoria.html" },
     { "source": "/bag-otium", "destination": "/bag-otium.html" },
     { "source": "/nossa-historia", "destination": "/nossa-historia.html" },
